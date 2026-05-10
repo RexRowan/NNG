@@ -1,0 +1,5 @@
+intro hb
+apply h
+rw[hb]
+rw[mul_zero]
+rfl
