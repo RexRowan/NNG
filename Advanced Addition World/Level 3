@@ -1,0 +1,8 @@
+intro h
+induction y with d hd
+rw[add_zero] at h
+exact h
+rw[add_succ] at h
+apply succ_inj at h
+apply hd at h
+exact h
