@@ -1,0 +1,25 @@
+induction y with d hd
+right
+apply zero_le
+cases hd
+left
+cases h with c hc
+rw[succ_eq_add_one]
+rw[hc]
+rw[add_assoc]
+use c+1
+rfl
+cases h with c hc
+cases c
+rw[add_zero] at hc
+rw[hc]
+left
+use 1
+rw[succ_eq_add_one]
+rfl
+right
+rw[add_succ] at hc
+rw[hc]
+use a
+rw[succ_add]
+rfl
