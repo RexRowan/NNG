@@ -1,0 +1,4 @@
+cases h with d hd
+use d*t
+rw[← add_mul, hd]
+rfl
