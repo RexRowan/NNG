@@ -1,0 +1,9 @@
+induction x
+rw[zero_add]
+intro h
+exact h
+rw[succ_add]
+intro h
+apply succ_inj at h
+apply n_ih at h
+exact h
