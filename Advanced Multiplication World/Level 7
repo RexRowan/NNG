@@ -1,0 +1,8 @@
+apply eq_succ_of_ne_zero at ha
+apply eq_succ_of_ne_zero at hb
+cases ha with c hc
+cases hb with d hd
+rw [hc, hd]
+rw [mul_succ, add_succ]
+symm
+apply zero_ne_succ
