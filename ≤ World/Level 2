@@ -1,0 +1,6 @@
+induction x with c hc
+apply le_refl
+rw[succ_eq_add_one]
+use c+1
+rw[zero_add]
+rfl
