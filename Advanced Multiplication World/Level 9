@@ -1,0 +1,18 @@
+induction b with d hd generalizing c
+rw[mul_zero] at h
+symm at h
+apply mul_eq_zero at h
+tauto
+cases c with e
+rw[mul_zero] at h
+apply mul_eq_zero at h
+tauto
+rw[succ_eq_add_one] at h
+rw[succ_eq_add_one] at h
+rw[mul_add] at h
+rw[mul_add] at h
+rw[mul_one] at h
+apply add_right_cancel at h
+apply hd at h
+rw[h]
+rfl
