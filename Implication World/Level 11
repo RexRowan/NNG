@@ -1,0 +1,10 @@
+rw [add_succ]
+rw [add_succ]
+rw [add_zero]
+intro h
+apply succ_inj at h
+apply succ_inj at h
+apply succ_inj at h
+apply succ_inj at h
+apply zero_ne_succ at h
+exact h
