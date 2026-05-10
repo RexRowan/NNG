@@ -1,0 +1,19 @@
+cases x
+left
+rfl
+cases a
+rw[one_eq_succ_zero]
+right
+left
+rfl
+right
+right
+rw[two_eq_succ_one] at hx
+apply succ_le_succ at hx
+rw[one_eq_succ_zero] at hx
+apply succ_le_succ at hx
+apply le_zero at hx
+rw[hx]
+rw[← one_eq_succ_zero]
+rw[← two_eq_succ_one]
+rfl
